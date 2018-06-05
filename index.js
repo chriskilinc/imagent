@@ -3,10 +3,13 @@ const twitterConfig = require('./twitterConfig');
 const exec = require('child_process').exec;
 const fs = require('fs');
 
-console.log("[imagent]  Starting Imagent");
-
 //  Twitter Config
-var T = new Twit(twitterConfig);
+const T = new Twit(twitterConfig);
+//  Processing Sketch Executable Command
+const processingCmd = 'processing-java --sketch=%cd%/imagen --run';
+
+//  Program  //
+console.log("[imagent]  Starting Imagent");
 
 //  Create a USER stream on FOLLOW event
 var tStream = T.stream('user');
@@ -21,4 +24,10 @@ function followed(eventData){
   console.log("@"+followerScreenName+" - '"+followerName+"'");
 
   //  Exexcute Program Processing
+  exec(processingCmd, processing);
+}
+
+function processing(){
+  console.log('[P]  Finished Executing Process "processing-java"');
+  console.log('[P]  An Image Was Created "output.png"')
 }
