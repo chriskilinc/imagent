@@ -1,5 +1,8 @@
 const Twit = require('twit');
 const twitterConfig = require('./twitterConfig');
+const exec = require('child_process').exec;
+const fs = require('fs');
+
 console.log("[imagent]  Starting Imagent");
 
 //  Twitter Config
