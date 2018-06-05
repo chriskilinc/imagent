@@ -47,7 +47,7 @@ function postTweetWithMedia(err, data, res){
     console.log(err);
   }
   else{
-    console.log("|[T] Media was Uploaded Succsessfully to Twitter");
+    console.log("|[T] Media was Uploaded Successfully to Twitter");
     const mediaId = data.media_id_string;
     var tweetWithMedia = {
       status: 'Thanks for the follow! @'+followerScreenName+' Here is an image i made for you with #processing',
