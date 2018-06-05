@@ -1,0 +1,14 @@
+{
+  "name": "imagent",
+  "version": "0.0.1",
+  "description": "Image Generator for Twitter Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "chriskilinc",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.10"
+  }
+}
