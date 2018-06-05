@@ -7,6 +7,7 @@ Twitter Bot made in NodeJs integrated with Processing, a visual arts programming
 - Create your API Keys
 
 - Confugure your API Keys in the file 'twitterConfig.js'
+
 *twitterConfig.js*
 ```
 module.exports = {
