@@ -1,6 +1,6 @@
 # imagent
 Twitter Bot made in NodeJs integrated with Processing, a visual arts programming language and software
-
+ 
 ##  Running imagent
 - Apply for Twitter Api Access [developer.twitter.com](https://developer.twitter.com)
 
@@ -22,5 +22,4 @@ module.exports = {
 ```
 npm start
 ```
-
-
+>I'm an Agent Image Generator for Twitter
